@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>External Style</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+             <div class="logo">
+             <img src="logoundiksha.png" width="100"> </div>
+            <nav class="nav">
+                <h1> Welcome To </h1>
+                <h4>Employee Data Collection Information System</h4>
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#logout">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <aside class="sidebar">
+                <div style="padding: 10px;">
+                    <b>Menu</b><br>
+                    <hr>
+                    <a href="#">Home</a><br />
+                    <a href="#">Biodata</a><br />
+                    <a href="#">Update Biodata</a><br />
+                    <a href="#">Contact</a><br />
+                </div>
+            </aside>
+            <main class="content">
+                <div style="padding: 10px;">
+                <h2 style="margin: 0px;">Update Biodata Pegawai</h2>
+                    <hr />
+                    <form action=" formulir.php" method="post" onSubmit="return ValidasiForm()" name="Fo rmReg">
+                        <table>
+                            <tr>
+                                <td>Nama</td>
+                                <td>:</td>
+                                <td><input type="text" name="nama" value="" placeholder="Tulisakan Nama Anda" /><br />
+                                    <small style="color: red" id="err_nama"></small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td>:</td>
+                                <td> <input type="password" name="password"
+                                        placeholder="Tulisakan Password Anda" /><br />
+                                    <small style="color: red" id="err_password"></small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jenis Kelamin</td>
+                                <td>:</td>
+                                <td><input type="radio" name="jenis_kelamin" value="lakilaki" checked /> Laki - Laki
+                                    <input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan
+                                    <br />
+                                    <small style="color: red" id="err_jenis_kelamin"></small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hobi</td>
+                                <td>:</td>
+                                <td><input type="checkbox" name="hobi" value="Membaca" /> Musik
+                                    <input type="checkbox" name="hobi" value="Menulis" /> Menulis
+                                    <input type="checkbox" name="hobi" value="Ngoding"checked /> Ngoding
+                                    <br />
+                                    <small style="color: red" id="err_hobi"></small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Asal Kota</td>
+                                <td>:</td>
+                                <td> <select name="asal_kota">
+                                        <option value="Kota Singaraja"> Singaraja</option>
+                                        <option>Surabaya</option>
+                                        <option value="Kota Yogyakarta">Yogyakarta</option>
+                                        <option value="Kota Sleman selected>Sleman</option>
+                                        <option value="Kota Blitar">Blitar</option>
+                                        <option value="Kota Majalengka">Majalengka</option>
+                                    </select><br />
+                                    <small style="color: red" id="err_asal_kota"></small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Komentar</td>
+                                <td>:</td>
+                                <td><textarea name="komentar" rows="5" cols="20"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" align="right"><button> simpan</button> </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </main>
+        </div>
+        <footer class="footer">
+            <font color="white">Copyright &#169; Rama Sanjaya</white>
+        </footer>
+    </div>
+</body>
+</html>
